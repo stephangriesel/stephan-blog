@@ -3,7 +3,7 @@ module.exports = {
     title: '',
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-react-helmet','gatsby-plugin-styled-components'
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
