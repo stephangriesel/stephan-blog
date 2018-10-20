@@ -1,14 +1,15 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import styled from "styled-components"
 import logo from '../images/logo.png';
 
+const HeaderWrapper = styled.div`
+background: #FFFFFF;
+margin-bottom: 1.45rem;
+`;
+
 const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
+  <HeaderWrapper>
     <div
       style={{
         margin: '0 auto',
@@ -20,7 +21,7 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
-            color: 'white',
+            color: '#000000',
             textDecoration: 'none',
           }}
         >
@@ -38,7 +39,7 @@ const Header = ({ siteTitle }) => (
         </li>
       </ul>
     </nav>
-  </div>
+  </HeaderWrapper>
 )
 
 export default Header
