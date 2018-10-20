@@ -32,7 +32,6 @@ const Header = ({ siteTitle }) => (
           <img src={logo} alt="Stephan Logo" />{siteTitle}
         </Link>
       </h1>
-    </HeaderContainer>
     <nav>
       <ul>
         <li>
@@ -43,6 +42,8 @@ const Header = ({ siteTitle }) => (
         </li>
       </ul>
     </nav>
+    </HeaderContainer>
+    
   </HeaderWrapper>
 )
 
