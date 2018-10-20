@@ -6,17 +6,21 @@ import logo from '../images/logo.png';
 const HeaderWrapper = styled.div`
 background: #FFFFFF;
 margin-bottom: 1.45rem;
+h1 {
+  img {
+    height:100px;
+  }
+}
+`;
+const HeaderContainer = styled.div`
+margin: 0 auto;
+max-width: 960px;
+padding: 1.45rem 1.0875rem;
 `;
 
 const Header = ({ siteTitle }) => (
   <HeaderWrapper>
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
+    <HeaderContainer>
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
@@ -28,7 +32,7 @@ const Header = ({ siteTitle }) => (
           <img src={logo} alt="Stephan Logo" />{siteTitle}
         </Link>
       </h1>
-    </div>
+    </HeaderContainer>
     <nav>
       <ul>
         <li>
