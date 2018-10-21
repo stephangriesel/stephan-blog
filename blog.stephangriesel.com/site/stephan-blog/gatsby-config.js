@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: '',
+    title: 'Stephan Griesel',
+    desc: 'A new blog'
   },
   plugins: [
-    'gatsby-plugin-react-helmet','gatsby-plugin-styled-components'
+    'gatsby-plugin-react-helmet','gatsby-plugin-styled-components',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
