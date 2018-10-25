@@ -22,5 +22,10 @@ query SiteMeta {
       desc
     }
   }
+  background: imageSharp(id: { regex: "/bg.jpg/" }) {
+    sizes(maxWidth: 1240) {
+      ...GatsbyImageSharpSizes
+    }
+  }
 }
 `;
